@@ -44,8 +44,8 @@ snowDrop.init({bindto: '#container'})
 Your container must have the following styling in order to function correctly:
 ```css
 #container {
-	position: relative;
-    overflow: hidden;    
+  position: relative;
+  overflow: hidden;    
 }
 ```
 > You can also use `position: absolute`  
