@@ -20,9 +20,11 @@ Snowfall on an image:
 Add the following files to your header:
 
 ```html
-<link rel="stylesheet" href="link-to/snowfall.css">
-<script src="link-to/snowfall.js"></script>
+<link rel="stylesheet" href="../link-to/snowfall.min.css">
+<script src="../link-to/snowfall.min.js"></script>
 ```
+[Link to repository](https://github.com/Gunnyarts/snowfall.js)
+
 At the bottom of your page, add a `<script>` element with the init function below.
 
 ```javascript
