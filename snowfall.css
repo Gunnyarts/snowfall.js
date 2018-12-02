@@ -5,6 +5,7 @@
 .snowflake {
   display: block;
   position: absolute;
+  pointer-events: none;
   top: -5px;
   left: var(--left);
   width: 5px;
@@ -13,6 +14,7 @@
   border-radius: 100%;
   animation: snowdrop-falling var(--duration) 0s 1 linear forwards;
   opacity: var(--opacity);
+  z-index: 999999;
 }
 
 @keyframes snowdrop-falling {
