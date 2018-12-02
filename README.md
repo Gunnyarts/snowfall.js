@@ -1,2 +1,3 @@
 # snowfall.js
-Animation of falling snow
+Pure Javascript animation of falling snow
+
