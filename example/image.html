@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Snowfall.js | A GunnyArts project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://gunnyarts.github.io/snowfall.js/src/min/snowfall.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <script src="https://gunnyarts.github.io/snowfall.js/src/min/snowfall.min.js"></script>
+    <style>
+      body {
+        margin:0;
+        padding:0;
+        background: linear-gradient(#d82c1c, #9e3333, #d82c1c);
+        font-family: 'roboto', sans-serif;
+      }
+      #container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-color: #333;
+        overflow:hidden;
+      }
+      .wrapper {
+        max-width: 1200px;
+        width: 100%;
+        padding: 20px;
+        background-color: #fafafa;
+        margin: 20px auto;
+      }
+      .img-container {width: 100%; height: auto; box-shadow: 2px 3px 5px rgba(0,0,0,0.4)}
+      .img-container > img {width:100%;display:block;}
+      
+      /* This is the important part */
+      .snowfall {position: relative; overflow: hidden;}
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+    
+      <h1>snowfall.js</h1>
+      <p>A pure JavaScript/CSS snowfall animation</p>
+
+      <h3>Snowfall on an image:</h3>
+      <p>You can simply add snowfall.js to an image by targeting the class of the image container in the init-function.<br>See code examples below.</p>
+      <div class="img-container snowfall">
+        <img src="images/wide.jpg">
+      </div>
+      <p>The CSS:</p>
+      <pre><code class="language-css">
+.snowfall {
+  position: relative;
+  overflow: hidden;
+}
+      </code></pre>
+      <p>The HTML:</p>
+      <pre><code class="language-html">
+&lt;div class="snowfall img-container"&gt;
+  &lt;img src="../link-to/image.jpg"&gt;
+&lt;/div&gt;
+      </code></pre>
+      <p>The JS:</p>
+      <pre><code class="language-js">
+snowDrop.init({bindto:".snowfall"})
+      </code></pre>
+      
+      
+    </div>
+    <script>
+//      snowDrop.init({
+//        bindto: '#container',  // the ID of the container element
+//        class: 'snowflake',   // main class for all snowflakes - default: "snowflake" - this handles animation, so change with caution.
+//        frequency: 100,       // create new snowdrop every X ms - default: 100
+//        layers: 3,            // amount of layers giving depth to the snow - default: 3, min: 1
+//        duration: 5000,       // time for the front layer of drops to hit the floor in ms - default 5000
+//        wind: 100              // pixels each snowflake moves to the right as it falls - default: 50
+//      })
+      snowDrop.init({bindto:".snowfall"})
+    </script>
+  </body>
+
+</html>
